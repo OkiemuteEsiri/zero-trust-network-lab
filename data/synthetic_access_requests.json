@@ -1,0 +1,50 @@
+[
+  {
+    "request_id": "ZT-001",
+    "subject": "analyst.alpha",
+    "device_id": "device-101",
+    "device_trust": "managed",
+    "source_zone": "workforce",
+    "destination_zone": "restricted-apps",
+    "resource": "finance-portal",
+    "sensitivity": "critical",
+    "mfa": true,
+    "identity_risk": 12,
+    "device_compliant": true,
+    "encrypted_channel": true,
+    "approved_protocols": ["HTTPS"],
+    "protocol": "HTTPS"
+  },
+  {
+    "request_id": "ZT-002",
+    "subject": "contractor.beta",
+    "device_id": "device-202",
+    "device_trust": "unknown",
+    "source_zone": "external",
+    "destination_zone": "restricted-apps",
+    "resource": "research-console",
+    "sensitivity": "high",
+    "mfa": false,
+    "identity_risk": 78,
+    "device_compliant": false,
+    "encrypted_channel": true,
+    "approved_protocols": ["HTTPS"],
+    "protocol": "HTTPS"
+  },
+  {
+    "request_id": "ZT-003",
+    "subject": "service.gamma",
+    "device_id": "svc-node-7",
+    "device_trust": "managed",
+    "source_zone": "application",
+    "destination_zone": "application",
+    "resource": "inventory-db",
+    "sensitivity": "high",
+    "mfa": true,
+    "identity_risk": 8,
+    "device_compliant": true,
+    "encrypted_channel": false,
+    "approved_protocols": ["TLS-DB"],
+    "protocol": "PLAIN-DB"
+  }
+]
